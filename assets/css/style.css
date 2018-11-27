@@ -4,8 +4,19 @@ body {
   background-repeat: no-repeat;
 }
 
-main {
+#timer {
+  text-align: center;
+  font-size: 60px;
+  color: whitesmoke;
+  margin-top: 3vw;
+}
+
+.trivia {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background: whitesmoke;
+  opacity: 0.8;
+  margin: 3vw 30vh 0 30vh;
+  padding: 1vw 0;
 }
