@@ -7,7 +7,7 @@
 //for loop for questions answered
 
 //Timer
-var timer = 30;
+var timer = 5;
 var intervalId;
 
 function run() {
@@ -17,12 +17,12 @@ function run() {
 function decrement() {
   timer--;
 
-  $("#timer").text("<p>" + timer + "</p>");
+  $("#timer").text(timer);
 
-  if (number === 0) {
+  if (timer === 0) {
     stop();
 
-    alert("Time Up!");
+    alert("Time Up! Your score is ");
   }
 }
 
@@ -30,4 +30,6 @@ function stop() {
   clearInterval(intervalId);
 }
 
+//Code correct answer increments
+//stop() when user answers all the questions
 run();
