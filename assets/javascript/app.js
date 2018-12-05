@@ -68,3 +68,11 @@ $(document).ready(function() {
 
   run();
 });
+
+document.getElementById("reset").addEventListener(
+  "click",
+  function(e) {
+    location.reload();
+  },
+  false
+);
