@@ -1,6 +1,4 @@
-//correct answer variable
-//for loop for questions answered
-$(document).ready(function() {
+$(document).ready(function () {
   var timer = 30;
   var intervalId;
   var correct = 0;
@@ -8,41 +6,41 @@ $(document).ready(function() {
   var answered = 0;
 
   //Wrong Answers
-  document.getElementById("choice1").onclick = function() {
+  document.getElementById("choice1").onclick = function () {
     wrong++;
     answered++;
   };
-  document.getElementById("choice2").onclick = function() {
+  document.getElementById("choice2").onclick = function () {
     wrong++;
     answered++;
   };
-  document.getElementById("choice5").onclick = function() {
+  document.getElementById("choice5").onclick = function () {
     wrong++;
     answered++;
   };
-  document.getElementById("choice6").onclick = function() {
+  document.getElementById("choice6").onclick = function () {
     wrong++;
     answered++;
   };
-  document.getElementById("choice8").onclick = function() {
+  document.getElementById("choice8").onclick = function () {
     wrong++;
     answered++;
   };
-  document.getElementById("choice9").onclick = function() {
+  document.getElementById("choice9").onclick = function () {
     wrong++;
     answered++;
   };
 
   //Correct Answers
-  document.getElementById("choice3").onclick = function() {
+  document.getElementById("choice3").onclick = function () {
     correct++;
     answered++;
   };
-  document.getElementById("choice4").onclick = function() {
+  document.getElementById("choice4").onclick = function () {
     correct++;
     answered++;
   };
-  document.getElementById("choice7").onclick = function() {
+  document.getElementById("choice7").onclick = function () {
     correct++;
     answered++;
   };
@@ -71,7 +69,7 @@ $(document).ready(function() {
 
 document.getElementById("reset").addEventListener(
   "click",
-  function(e) {
+  function (e) {
     location.reload();
   },
   false
